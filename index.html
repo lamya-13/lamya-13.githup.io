@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>رسالة لك 🤍</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ffd6e8, #fff);
+      font-family: "Arial", sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+    .box {
+      background: white;
+      border-radius: 25px;
+      padding: 25px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #ff5fa2;
+    }
+    p {
+      font-size: 18px;
+    }
+    button {
+      background: #ff5fa2;
+      border: none;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #ff3c90;
+    }
+    .heart {
+      font-size: 30px;
+      animation: float 2s infinite;
+    }
+    @keyframes float {
+      0% {transform: translateY(0);}
+      50% {transform: translateY(-10px);}
+      100% {transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h1>مرحبا يا أحلى شي بحياتي 🤍</h1>
+    <p>
+      لو وصلت لهالصفحة  
+      فهذا يعني إنك تحبني شوي…  
+      أو كثير…  
+      أو كثير كثير 😌
+    </p>
+
+    <div class="heart">💗💗💗</div>
+
+    <button onclick="showLove()">اضغط هنا بس 😏</button>
+
+    <p id="msg"></p>
+  </div>
+
+  <script>
+    function showLove() {
+      document.getElementById("msg").innerHTML =
+      "أحبك أكثر مما تتخيل 🤍<br>وترا هالموقع مخصوص لك لا أحد غيرك 😌";
+    }
+  </script>
+
+</body>
+</html>
